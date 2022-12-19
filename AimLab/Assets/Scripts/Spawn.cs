@@ -5,6 +5,8 @@ using UnityEngine;
 public class Spawn : MonoBehaviour
 {
     public Target target;
+    public bool hit;
+    public PlayerShooter shooter;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +17,7 @@ public class Spawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        hit = shooter.hit;
         target = FindObjectsOfType<Target>();
     }
 }
