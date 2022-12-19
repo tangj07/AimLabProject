@@ -11,7 +11,7 @@ public class PlayerShooter : MonoBehaviour
     private float smoothing;
 
     private GameObject player;
-    public bool hit;
+    public bool hit = false;
     // Start is called before the first frame update
     void Start()
     {
