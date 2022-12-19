@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerShooter : MonoBehaviour
 {
@@ -16,13 +17,12 @@ public class PlayerShooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< Updated upstream
         target = FindObjectOfType<Target>();
+=======
+        //target = FindObjectsOfType<Target>();
+>>>>>>> Stashed changes
         //hit = CircleCollision( , target);
-    }
-
-    private void RotCamera()
-    {
-        Vector2 inputVals = new Vector2();
     }
     //private bool CircleCollision( objecta, Target objectb)
     //{
@@ -40,4 +40,18 @@ public class PlayerShooter : MonoBehaviour
     //    }
     //    else { return false; }
     //}
+
+    public void OnCheckForShooting(InputValue value)
+    {
+          RaycastHit watIHit;
+          if(Physics.Raycast(transform.position, transform.forward, out watIHit, Mathf.Infinity)){
+              Debug.Log(watIHit.collider.name);
+          }
+    }
+
+    //public void ShootInput(bool newSprintState)
+    //{
+    //    sprint = newSprintState;
+    //}
+
 }
