@@ -18,6 +18,6 @@ public class Spawn : MonoBehaviour
     void Update()
     {
         hit = shooter.hit;
-        target = FindObjectsOfType<Target>();
+        target = FindObjectOfType<Target>();
     }
 }

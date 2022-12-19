@@ -16,7 +16,7 @@ public class PlayerShooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        target = FindObjectsOfType<Target>();
+        target = FindObjectOfType<Target>();
         //hit = CircleCollision( , target);
     }
 
