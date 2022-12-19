@@ -17,11 +17,7 @@ public class PlayerShooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-<<<<<<< Updated upstream
         target = FindObjectOfType<Target>();
-=======
-        //target = FindObjectsOfType<Target>();
->>>>>>> Stashed changes
         //hit = CircleCollision( , target);
     }
     //private bool CircleCollision( objecta, Target objectb)

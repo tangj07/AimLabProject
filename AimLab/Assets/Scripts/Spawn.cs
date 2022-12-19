@@ -18,10 +18,6 @@ public class Spawn : MonoBehaviour
     void Update()
     {
         hit = shooter.hit;
-<<<<<<< Updated upstream
         target = FindObjectOfType<Target>();
-=======
-        //target = FindObjectsOfType<Target>();
->>>>>>> Stashed changes
     }
 }
