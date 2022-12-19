@@ -15,6 +15,6 @@ public class Spawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        target = FindObjectsOfType<Target>();
+        //target = FindObjectsOfType<Target>();
     }
 }
