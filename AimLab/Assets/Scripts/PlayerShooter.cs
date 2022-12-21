@@ -45,9 +45,4 @@ public class PlayerShooter : MonoBehaviour
           }
     }
 
-    //public void ShootInput(bool newSprintState)
-    //{
-    //    sprint = newSprintState;
-    //}
-
 }
