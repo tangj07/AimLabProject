@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerShooter : MonoBehaviour
 {
-    public bool shoot = false;
+    public bool shoot = false; //MAKE SHOOT ACCESSABLE BRUH
     // Start is called before the first frame update
     void Start()
     {
