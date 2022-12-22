@@ -1,23 +1,21 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawn : MonoBehaviour
+public class TargetHit : MonoBehaviour
 {
     public Target target;
-    public bool hit;
-    public PlayerShooter shooter;
+    [SerializeField]
+    GameObject crosshair;
     // Start is called before the first frame update
     void Start()
     {
-
-       
     }
 
     // Update is called once per frame
     void Update()
     {
-        hit = shooter.hit;
         target = FindObjectOfType<Target>();
     }
 }
