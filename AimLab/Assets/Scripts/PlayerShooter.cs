@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerShooter : MonoBehaviour
 {
-    public bool shoot = false; //MAKE SHOOT ACCESSABLE BRUH
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +20,7 @@ public class PlayerShooter : MonoBehaviour
         RaycastHit watIHit;
         if (Physics.Raycast(transform.position, transform.forward, out watIHit, Mathf.Infinity))
         {
-            shoot = true;
             Debug.Log(watIHit.collider.name);
         }
-        else { shoot = false; }
     }
 }

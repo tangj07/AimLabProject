@@ -1,3 +1,4 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,7 @@ using UnityEngine;
 public class Crosshair : MonoBehaviour
 {
     public bool hit = false;
-    public bool shoot = false;
+    public StarterAssetsInputs reference;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,10 @@ public class Crosshair : MonoBehaviour
     {
         if (target.gameObject.tag.Equals("target") == true)
         {
-            hit = true;
+            if (reference.shoot == true)
+            {
+                hit = true;
+            }
         }
         else { hit= false; }
     }
