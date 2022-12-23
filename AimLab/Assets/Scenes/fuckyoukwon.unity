@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: 0
-  shoot: 0
+  reference: {fileID: 1486968132}
 --- !u!54 &495037252
 Rigidbody:
   m_ObjectHideFlags: 0
