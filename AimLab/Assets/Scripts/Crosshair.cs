@@ -19,12 +19,16 @@ public class Crosshair : MonoBehaviour
     }
     void OnTriggerEnter(Collider target)
     {
-        if (target.gameObject.tag.Equals("target") == true)
+        if (target.gameObject.tag == "target" && reference.shoot == true)
         {
-            if (reference.shoot == true)
-            {
-                hit = true;
-            }
+            //if (reference.shoot == true)
+            //{
+            //    Debug.Log("hit bitvh");
+            //    hit = true;
+            //}
+
+            Debug.Log("hit bitvh");
+            hit = true;
         }
         else { hit= false; }
     }
