@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class Crosshair : MonoBehaviour
 {
-    public bool hit = false;
+    public bool collide = false;
     public StarterAssetsInputs reference;
+    public bool shoot, hit;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,20 +17,20 @@ public class Crosshair : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    }
-    void OnTriggerEnter(Collider target)
-    {
-        if (target.gameObject.tag == "target" && reference.shoot == true)
+        shoot = reference.shoot;
+        if(collide==true&&shoot == true)
         {
-            //if (reference.shoot == true)
-            //{
-            //    Debug.Log("hit bitvh");
-            //    hit = true;
-            //}
-
-            Debug.Log("hit bitvh");
+            Debug.Log("hitsadsadsad bitvh");
             hit = true;
         }
         else { hit= false; }
+    }
+    void OnTriggerEnter(Collider target)
+    {
+        if (target.gameObject.tag == "target")
+        {
+            collide = true;
+        }
+        else { collide= false; }
     }
 }
