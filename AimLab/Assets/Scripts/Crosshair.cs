@@ -18,7 +18,7 @@ public class Crosshair : MonoBehaviour
     void Update()
     {
         shoot = reference.shoot;
-        if(collide==true&&shoot == true)
+        if (collide==true&&shoot == true)
         {
             Debug.Log("hitsadsadsad bitvh");
             hit = true;

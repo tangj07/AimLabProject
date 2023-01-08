@@ -23,6 +23,7 @@ public class TargetHit : MonoBehaviour
             if (hit == true)
             {
                 Destroy(target);
+                reference.collide = false;
                 Vector3 pos = new Vector3(UnityEngine.Random.Range(-5.5f, 12.8f), UnityEngine.Random.Range(1.54f, 7.88f), 24);
                 GameObject temp;
                 temp = Instantiate(prefab, pos, Quaternion.identity);
